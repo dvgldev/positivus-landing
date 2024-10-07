@@ -1,0 +1,43 @@
+:root {
+    --grey-color: #F3F3F3;
+    --green-color: #B9FF66;
+    --darkblue-color: #191A23;
+    --black-color: #000;
+    --white-color: #fff;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+}

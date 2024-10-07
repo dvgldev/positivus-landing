@@ -1,0 +1,91 @@
+/* owp subheading */
+.owp__subheading {
+    max-width: 744px;
+    max-height: 51px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.owp__subheading__title {
+    min-width: 412px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 0px 7px;
+    background: var(--green-color);
+}
+
+.owp__subheading__desc {
+    min-width: 292px;
+}
+
+/* owp content */
+.owp__cards {
+    padding: 80px 0 140px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.owp__card {
+    box-shadow: 0 5px 0 0 var(--darkblue-color);
+    background: var(--grey-color);
+    border: 1px solid var(--darkblue-color);
+    border-radius: 45px;
+    padding: 40px 60px;
+    width: 1234px;
+    height: auto;
+    overflow: hidden;
+    transition: background-color 0.3s, height 0.3s;
+}
+
+.owp__card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.owp__card__header__left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.owp__card__content {
+    display: none;
+    margin-top: 20px;
+}
+
+.owp__card__content hr {
+    margin-bottom: 20px;
+    background: var(--black-color);
+    width: 1114px;
+    height: 1px;
+}
+
+.owp__card.active {
+    background-color: var(--green-color);
+}
+
+.owp__card.active .owp__card__content {
+    display: block;
+}
+
+.toggle-btn {
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: var(--grey-color);
+    border: 1px solid var(--darkblue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owp__card.active .toggle-btn {
+    content: '-';
+}

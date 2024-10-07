@@ -1,0 +1,164 @@
+/* Header with Nav */
+
+.header .container {
+    min-width: 1240px;
+    max-width: 1270px;
+}
+
+.header__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.header__logo {
+    max-width: 220px;
+    max-height: 36px;
+}
+
+.header__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+.header__nav__link {
+    font-size: 20px;
+    color: var(--black-color);
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.header__nav__link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: var(--black-color);
+    transition: width 0.3s ease;
+}
+
+.header__nav__link:hover::after {
+    width: 100%;
+}
+
+.request {
+    text-align: center;
+    padding: 20px 35px;
+    border-radius: 15px;
+    border: 1px solid var(--darkblue-color);
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    position: relative;
+}
+
+.request::after {
+    content: none;
+}
+
+.request:hover {
+    background-color: var(--darkblue-color);
+    color: var(--grey-color);
+    text-decoration: none;
+}
+
+.request:active {
+    transition: 0.2s;
+    background: var(--green-color);
+    color: var(--black-color);
+}
+
+/*Header-main*/
+
+.header__content {
+    padding: 70px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__content__text {
+    min-width: 501px;
+    max-width: 531px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.header__content__desc {
+    max-width: 498px;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.header__content__image img {
+    width: 600px;
+    height: 515px;
+}
+
+.header__content__button {
+    text-align: center;
+    padding: 20px 35px;
+    border-radius: 15px;
+    background: var(--darkblue-color);
+    color: var(--white-color);
+    border: 1px solid var(--darkblue-color);
+    font-size: 20px;
+    line-height: 140%;
+    transition: 0.3s;
+}
+
+.header__content__button:hover {
+    background: var(--white-color);
+    color: var(--darkblue-color);
+    text-decoration: none;
+}
+
+.header__content__button:active {
+    transition: 0.2s;
+    background: var(--green-color);
+    color: var(--black-color);
+}
+
+/*Header-companies*/
+
+.header__companies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__company {
+    filter: invert(50%);
+}
+
+.amazon {
+    filter: invert(35%);
+}
+
+.dribbble {
+    filter: invert(20%);
+}
+
+.hubspot {
+    filter: brightness(0.5) invert(25%);
+}
+
+.notion {
+    filter: invert(0%);
+}
+
+.netflix {
+    filter: brightness(0.1);
+    opacity: 0.7;
+}

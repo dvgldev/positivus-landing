@@ -1,0 +1,70 @@
+/* casestudies__subheading */
+.casestudies__subheading {
+    max-width: 885px;
+    max-height: 51px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.casestudies__subheading__title {
+    min-width: 265px;
+    text-align: center;
+    border-radius: 7px;
+    padding: 0px 7px;
+    background: var(--green-color);
+}
+
+.casestudies__subheading__desc {
+    min-width: 580px;
+}
+
+/* casestudies__content */
+
+.casestudies__content {
+    padding: 80px 0 140px 0;
+}
+
+.casestudies__card {
+    background: var(--darkblue-color);
+    border-radius: 45px;
+    padding: 70px 60px;
+}
+
+.casestudies__text {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.casestudies__textbox {
+    max-width: 286px;
+    max-height: 186px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.casestudies__text hr {
+    min-width: 186px;
+    height: 1px;
+    background: var(--white-color);
+    transform: rotate(-90deg);
+}
+
+.casestudies__button {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--green-color);
+    display: flex;
+    align-items: center;
+}
+
+.icon__casestudies__button {
+    padding-left: 15px;
+    max-width: 21px;
+    max-height: 20px;
+}
